@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Ubuntu:wght@300;500;700&display=swap");
+.header {
+  height: 74px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .header-title {
+  text-align: left;
+  font: normal normal normal 35px/15px Source Sans Pro;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin-left: 220px;
+}
+
+.header .header-cartBar {
+  width: 343px;
+  height: 64px;
+  background: #f54257 0% 0% no-repeat padding-box;
+  border-radius: 16px;
+  position: relative;
+  margin-top: -55px;
+  margin-right: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 20px;
+}
+
+.header .header-cartBar .arrow {
+  position: absolute;
+  top: 0;
+  right: 60px;
+  margin-top: -5px;
+  border: solid #f54257;
+  background-color: #f54257;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.header .header-cartBar .up {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+/*# sourceMappingURL=header.css.map */

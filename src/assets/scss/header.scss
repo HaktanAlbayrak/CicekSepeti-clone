@@ -1,0 +1,108 @@
+@import "./global.scss";
+
+.header {
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .header-title {
+    text-align: left;
+    font: normal normal normal 35px/15px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #ffffff;
+    margin-left: 220px;
+  }
+
+  .header-cartBar {
+    width: 343px;
+    height: 64px;
+    background: #f54257 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+    position: relative;
+    margin-top: -55px;
+    margin-right: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 20px;
+
+    .arrow {
+      position: absolute;
+      top: 0;
+      right: 60px;
+      margin-top: -5px;
+      border: solid #f54257;
+      background-color: #f54257;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+    }
+
+    .up {
+      transform: rotate(-135deg);
+    }
+
+    .header-cartBar-text {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 11px;
+
+      img {
+        margin-right: 5px;
+      }
+      span {
+        margin-right: 5px;
+        text-align: left;
+        font: normal normal 600 15px/11px Source Sans Pro;
+        letter-spacing: 0px;
+        color: #ffce00;
+      }
+      p {
+        margin-right: 5px;
+        text-align: left;
+        font: normal normal 600 15px/11px Source Sans Pro;
+        letter-spacing: 0px;
+        color: #ffffff;
+      }
+    }
+
+    .header-cartBar-bar {
+      color: #fff;
+      letter-spacing: 1px;
+      font-size: 8px;
+      font-weight: 500;
+      position: relative;
+      display: inline-block;
+      width: 80%;
+      margin-top: 4px;
+
+      span {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 8px;
+        background: #d01d32;
+        border-radius: 50px;
+
+        &:before {
+          position: absolute;
+          content: "";
+          // width: 80%;
+          height: 100%;
+          background: linear-gradient(to left, #ffce00, #dacc96);
+          border-radius: 50px;
+          animation: bar 2s ease;
+        }
+        @keyframes bar {
+          from {
+            width: 0;
+          }
+        }
+      }
+    }
+  }
+}
